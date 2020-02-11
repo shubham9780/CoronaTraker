@@ -15,6 +15,6 @@ username:{
     timesstamps:true,
 });
 
-const User=mongoose.model('user', userSchema);
+const User=mongoose.model('User', userSchema);
 
-module.export = User;
+module.exports = User;
