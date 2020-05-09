@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
+import "./index.css";
 export default class Navbar extends Component {
 
   render() {
     return (
       <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-        <Link to="/" className="navbar-brand">ExcerTracker</Link>
+        <Link to="/overall" className="navbar-brand">CoronaTraker</Link>
         <div className="collpase navbar-collapse">
         <ul className="navbar-nav mr-auto">
           <li className="navbar-item">
-          <Link to="/" className="nav-link">Exercises</Link>
+        <Link to="/overall" className="nav-link">Overall Cases</Link>
+        </li>
+          <li className="navbar-item">
+          <Link  to="/India-stat" className="nav-link">India</Link>
           </li>
           <li className="navbar-item">
-          <Link to="/create" className="nav-link">Create Exercise Log</Link>
-          </li>
-          <li className="navbar-item">
-          <Link to="/user" className="nav-link">Create User</Link>
+          <Link  to="/world-stat" className="nav-link">World</Link>
           </li>
         </ul>
         </div>
