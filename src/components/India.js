@@ -85,8 +85,8 @@ export default class India extends React.Component{
   render(){
     return (
       <div>
-      <div>
-         <select onChange={this.onSelect}>{this.renderOption()}</select>
+      <div><center>
+         <select onChange={this.onSelect} style={{fontWeight:"550"}}>{this.renderOption()}</select></center>
          </div>
          <div className="flex">
             <ConfirmedDisplay value={this.state.confirmed} />

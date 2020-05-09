@@ -71,15 +71,15 @@ renderOption()
       {country.country}
       </option>;
   });
-  array.unshift(<option key={-1}>Search by country</option>);
+  array.unshift(<option key={-1} >Search by country</option>);
   return array;
 }
 
   render(){
     return(
       <div>
-      <div>
-         <select onChange={this.onSelect}>{this.renderOption()}</select>
+      <div><center>
+         <select onChange={this.onSelect} style={{fontWeight:"550"}}>{this.renderOption()}</select></center>
          </div>
          <div className="flex">
             <ConfirmedDisplay value={this.state.confirmed} />
