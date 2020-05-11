@@ -47,8 +47,8 @@ async getdata(){
           </div>
          
           <div className="chart">
-              <div className="b">
-          <Chart value={this.state.confirmed} value1={this.state.recovered} value2={this.state.deaths}/></div>
+              <div className="flex">
+          <Chart value={this.state.confirmed} value1={this.state.recovered} value2={this.state.deaths}/> </div>
           <div className="b">
 <h4><img src={soap} style={{hieght:"11%",width:"11%"}} alt="soap"></img>Wash hands</h4>
 <h6>Wash your hands with soap or sanitizer.</h6>
@@ -59,8 +59,6 @@ async getdata(){
 <h4><img src={mask} style={{hieght:"11%",width:"11%"}} alt="soap"></img>Cover a Cough or snezze</h4>
 <h6>Cover your snezze with your sleeves or tissue. </h6>
           </div>
-          {/* <img className="image" style={{ alignItems:"center",
-    flexWrap:"wrap",width:"49.33%",display:"flex",border:"1px solid black",borderRadius:"5px",boxShadow:" 0 5px 20px rgba(0, 0, 0, 0.5)"}}src={corona} alt="corona"/> */}
           </div>
           </div>
         

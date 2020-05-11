@@ -33,8 +33,9 @@ export default class Example extends PureComponent {
     ];
     
     return (
+        <div >
       <BarChart className="b"
-        width={510}
+        width={350}
         height={350}
         data={lables}
         margin={{
@@ -43,14 +44,15 @@ export default class Example extends PureComponent {
         barSize={35}
       >
         <XAxis dataKey="name" scale="point" padding={{ left: 10, right: 10 }} />
-        <YAxis /> 
+        <YAxis  /> 
         <Tooltip />
         <Legend />
-        <CartesianGrid strokeDasharray="3 3" />
-        <Bar dataKey="v" fill="#8884d8" background={{ fill: '#eee' }}>
+        <CartesianGrid strokeDasharray="2 2" />
+        <Bar  dataKey="v" fill="#8884d8" background={{ fill: '#eee' }}>
         <LabelList dataKey="name" />
         </Bar>
       </BarChart>
+      </div>
     );
   }
 }
