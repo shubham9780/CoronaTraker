@@ -1,6 +1,20 @@
 .navbar-item{
     font-weight: 500;
+    max-width: 800px;;
 }
+.brand{
+display: inline;
+}
+
+.chart{
+  display: flex;
+  /* width:300px; */
+  justify-content:space-evenly;
+  align-items: center;
+    flex-wrap: wrap;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -51,10 +65,19 @@
   
   .box {
     margin: 1em;
-    padding: 1rem;
+    padding: 1.5rem;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  }
+  .b {
+    /* margin: 1em;
+    padding: 1.5rem; */
+    border: 1px solid black;
+    border-radius: 5px;
+    /* font-size: 2rem; */
     font-weight: bold;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   }
@@ -65,11 +88,12 @@
     background: #a2ff55;
   }
   .box.deaths {
-    background: #ffa99a;
+    background: #e96952;
   }
   .box .value {
     display: block;
-    text-align: center;
+    text-align: left;
+    font-weight: bold;
   }
   
   .countryList {
