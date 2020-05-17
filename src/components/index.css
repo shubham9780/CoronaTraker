@@ -57,10 +57,11 @@ display: inline;
   }
   
   .flex {
-    display: flex;
+     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+  
   }
   
   .box {
@@ -135,7 +136,7 @@ display: inline;
     border-collapse: collapse;
     width: 100%;
     padding: 2px;
-    table-layout: fixed;
+    table-layout:fixed;
   }
   
   .td {
@@ -147,14 +148,18 @@ display: inline;
     padding-bottom: 2px; 
     padding:2px;
     text-align: center;
+
+   
   }
   .th {
     border: 1px solid #ddd;
     padding: 2px;
+
   }
   
    .tr{
      background-color: #faf6f6;
+
   }
   
   .table .tr:hover {
@@ -168,6 +173,7 @@ display: inline;
     color: rgb(8, 7, 7);
     font-weight: 600;
     font-size: large;
+
   }
 
   

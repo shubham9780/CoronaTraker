@@ -93,7 +93,7 @@ export default class India extends React.Component{
             <RecoveredDisplay value={this.state.recovered} />
             <Deaths value={this.state.deaths} />
           </div><hr/>
-         <div>
+         <div className="flex">
     {this.rendersState()}
 </div>
 </div>
