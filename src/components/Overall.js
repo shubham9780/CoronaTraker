@@ -3,11 +3,11 @@ import axios from 'axios';
 import RecoveredDisplay from "./RecoveredDisplay";
 import ConfirmedDisplay from "./ConfirmedDisplay";
 import Deaths from "./Deaths";
-import Chart from "./Chart";
-import soap from "./img/soap.png";
-import home from "./img/home.png";
-import stop from "./img/stop.png";
-import mask from "./img/mask.png";
+import wh from "./img/wh.jpg";
+import h1 from "./img/h1.png";
+import s from "./img/s.webp";
+import co from "./img/co.jpg";
+import "./grid.css";
 
 export default class Overall extends React.Component{
 
@@ -39,29 +39,48 @@ async getdata(){
 
     render(){
         return (
-            <div>
+            <div className="main-grid">
+                <div className="infor">
+                    <p><b>Coronavirus</b> disease (<b>COVID-19</b>) is an infectious disease caused by a new virus that had not been previously identified in humans. Please use the below options to check National and World statistics for COVID-19 </p>
+                </div>
             <div className="flex">
             <ConfirmedDisplay value={this.state.confirmed} />
             <RecoveredDisplay value={this.state.recovered} />
             <Deaths value={this.state.deaths} />
           </div>
-         
-          <div className="chart">
-              <div className="flex">
-          <Chart value={this.state.confirmed} value1={this.state.recovered} value2={this.state.deaths}/> </div>
-          <div className="b">
-<h4><img src={soap} style={{hieght:"11%",width:"11%"}} alt="soap"></img>Wash hands</h4>
-<h6>Wash your hands with soap or sanitizer.</h6>
-<h4><img src={stop} style={{hieght:"11%",width:"11%"}} alt="soap"></img>Social Distancing</h4>
-<h6>Keep a distance 1m away from others.</h6>
-<h4><img src={home} style={{hieght:"11%",width:"11%"}} alt="soap"></img>Stay At home</h4>
-<h6>Always stay at home.</h6>
-<h4><img src={mask} style={{hieght:"11%",width:"11%"}} alt="soap"></img>Cover a Cough or snezze</h4>
-<h6>Cover your snezze with your sleeves or tissue. </h6>
-          </div>
-          </div>
-          </div>
-        
+  
+          <main>
+            <div class="card">
+                <div class="info">
+                    <strong>Wash Hands</strong>
+                    <p>In general, both handwashing with soap and handsanitizer,are highly effective at killing most germs and pathogens.Wash your hands with soap or sanitizer</p>
+                </div><hr/>
+                <img src={wh} alt="alt"/>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <strong>Social Distancing</strong>
+                    <p>Social distancing is a practise of reducing close contact between people in order to reduce opportunities for disease transmmission. Keep a distance 1m away from others</p>
+                </div><hr/>
+                <img src={s} alt="alt"/>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <strong>Stay At Home</strong>
+                    <p>Staying at home reduces the chances of a person of getting infectious from this virus.Always stay at home</p>
+                </div><hr/>
+                <img src={h1} alt="alt"/>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <strong>Cover a Sneeze or Cough</strong>
+                    <p>Cover your snezze with your sleeves or tissue and always cover your mouth and nose with mask while stepping out of the house in order to curb the spread of covid-19.</p>
+                </div><hr/>
+                <img src={co} alt="alt"/>
+            </div>
+        </main>
+
+</div>        
         );
     }
 }

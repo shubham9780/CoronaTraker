@@ -4,6 +4,7 @@ import axios from 'axios';
 import RecoveredDisplay from "./RecoveredDisplay";
 import ConfirmedDisplay from "./ConfirmedDisplay";
 import Deaths from "./Deaths";
+import "./grid.css";
 
 
 export default class India extends React.Component{
@@ -84,7 +85,7 @@ export default class India extends React.Component{
 
   render(){
     return (
-      <div>
+      <div className="main">
       <div><center>
          <select onChange={this.onSelect} style={{fontWeight:"550"}}>{this.renderOption()}</select></center>
          </div>
@@ -93,7 +94,7 @@ export default class India extends React.Component{
             <RecoveredDisplay value={this.state.recovered} />
             <Deaths value={this.state.deaths} />
           </div><hr/>
-         <div className="flex">
+         <div>
     {this.rendersState()}
 </div>
 </div>

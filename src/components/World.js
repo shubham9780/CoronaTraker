@@ -77,7 +77,7 @@ renderOption()
 
   render(){
     return(
-      <div>
+      <div className="main">
       <div><center>
          <select onChange={this.onSelect} style={{fontWeight:"550"}}>{this.renderOption()}</select></center>
          </div>

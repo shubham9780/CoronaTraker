@@ -3,18 +3,6 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend,LabelList
 } from 'recharts';
 
-// const data = [
-//   {
-//     name: 'Confirmed', uv: this.getconf(), pv: 123, amt: 2400,
-//   },
-//   {
-//     name: 'Recovered', uv: this.getrec(), pv: 1398, amt: 2210,
-//   },
-//   {
-//     name: 'Deaths', uv:this.getdeath(), pv: 9800, amt: 2290,
-//   },
-// ];
-
 export default class Example extends PureComponent {
   static jsfiddleUrl = 'https://jsfiddle.net/alidingling/q4eonc12/';
 
